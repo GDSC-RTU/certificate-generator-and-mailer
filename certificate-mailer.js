@@ -23,9 +23,19 @@ module.exports = async (name, email) => {
         
         from: 'ishubham2101@gmail.com',
         to: `${email}`,
-        subject: 'Congratulations on completing all the labs!',
-        html: `<h3>Hey, ${name}!</h3> <br> I am Shubham Gautam (Lead at GDSC RTU). 
-        On behalf of Google DSC RTU, I want to congratulate you on completing all the quests under <b>30DaysOfGoogleCloud</b>. To honour your achivement, we have prepared a certificate for you to showcase on your LinkedIn. Please find the attached certificate and do not forget to tag GDSC RTU on your posts!`,
+        subject: 'Congratulations on completing all the Track 1 labs!',
+        html: `<h4>Hey there, ${name}</h4><br>
+        I am Shubham Gautam (Lead at GDSC, RTU). 
+        Bet you thought no one would notice the hard work you did for 30 days. Well... we did!!<br> 
+        Congratulations on completing <b>drum roll</b> both the tracks of 30 days of Google Cloud!<br>
+        Track 1 - Cloud Engineering Track<br> 
+        <br>
+        Since you've completed all the labs under track 1, you'll be receiving the certificate and Cloud swags accordingly. In order to make sure you get them, keep an eye on your email inbox as you'll get (or probably already got) a mail from Google Cloud. <br><br>
+        Attached with this email is a certificate of achivement for you to post on your LinkedIn and tell your friends about your achivement. Yay!<br>
+        <br><br>
+        
+        Regards <br>
+        Google DSC RTU`,
 
         attachments: [{
             filename: `${name}.pdf`,

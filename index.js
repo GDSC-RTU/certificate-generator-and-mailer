@@ -13,7 +13,6 @@ fs.createReadStream('data/participantData.csv')
         results.forEach((result) => {
             generateCertificate(result['Name'])
             mailCertificate(result["Name"], result["Email Address"])
-            result.sent = "Sent"
         })
         
     });
